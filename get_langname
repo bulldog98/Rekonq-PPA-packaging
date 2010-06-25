@@ -1,0 +1,4 @@
+#!/bin/bash
+echo $1 > /tmp/get_lang
+sed -r s/[^_]+_// /tmp/get_lang
+rm -f /tmp/get_lang
